@@ -19,12 +19,14 @@ from SmartApi import SmartConnect #or from SmartApi.smartConnect import SmartCon
 import pyotp
 from logzero import logger
 
-api_key = 'Your Api Key'
-username = 'Your client code'
-pwd = 'Your pin'
+api_key = '5xU6QJi4'
+username = 'N53206045'
+pwd = '8825'
 smartApi = SmartConnect(api_key)
 try:
-    token = "Your QR value"
+    token = "SGZJTNXTZMSHO5AZJWMJ6LELWQ
+![image](https://github.com/mishraniteshstm/smartapi-python/assets/163901586/c6606c1e-2eef-4ef8-b82f-f228ed5ba7a1)
+"
     totp = pyotp.TOTP(token).now()
 except Exception as e:
     logger.error("Invalid Token: The provided token is not valid.")
@@ -130,10 +132,14 @@ else:
     from SmartApi.smartWebSocketV2 import SmartWebSocketV2
     from logzero import logger
 
-    AUTH_TOKEN = "Your Auth_Token"
-    API_KEY = "Your Api_Key"
-    CLIENT_CODE = "Your Client Code"
-    FEED_TOKEN = "Your Feed_Token"
+    AUTH_TOKEN = "SGZJTNXTZMSHO5AZJWMJ6LELWQ
+![image](https://github.com/mishraniteshstm/smartapi-python/assets/163901586/2977d584-5a5f-4f03-b866-362871717b0a)
+"
+    API_KEY = "5xU6QJi4"
+    CLIENT_CODE = "N53206045"
+    FEED_TOKEN = "SGZJTNXTZMSHO5AZJWMJ6LELWQ
+![image](https://github.com/mishraniteshstm/smartapi-python/assets/163901586/d94660d9-18e5-480c-a9ac-598e8061de48)
+"
     correlation_id = "abc123"
     action = 1
     mode = 1
